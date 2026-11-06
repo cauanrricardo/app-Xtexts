@@ -4,8 +4,6 @@
 - **Cauan Ricardo** — [@cauanrricardo](https://github.com/cauanrricardo)
 - **Radlei Doroth** — [@radleidoroth](https://github.com/radleidoroth)
 
-**Entrega:** hoje, pelo Classroom.
-
 ---
 
 ## 1. Divisão
@@ -54,30 +52,6 @@ mensagemService.enviarMensagem(contatoId, texto) // valida, cria e guarda
 
 ---
 
-## 3. Checklist dos requisitos
-
-| # | Requisito do PDF | Responsável | ✔ |
-|---|---|---|---|
-| 1 | Home com ≥ 4 contatos (nome + abrir conversa) | Radlei | ☐ |
-| 2 | Navega passando **id e nome** como parâmetros | Radlei | ☐ |
-| 3 | Chat mostra o nome do contato | Cauan (título no `App.js`) | ☐ |
-| 4 | Lista de mensagens | Radlei | ☐ |
-| 5 | Enviadas à direita, recebidas à esquerda | Radlei | ☐ |
-| 6 | Campo de texto + botão enviar | Radlei | ☐ |
-| 7 | Após enviar: mensagem aparece e campo é limpo | Radlei | ☐ |
-| 8 | Mensagem vazia **bloqueada** | Cauan (Service) | ☐ |
-| 9 | Componente `Mensagem` com `mensagem` e `recebida` | Radlei | ☐ |
-| 10 | Repository com `{ id, contatoId, texto, recebida }` | Cauan | ☐ |
-| 11 | `getMensagens` e `adicionarMensagem` no Repository | Cauan | ☐ |
-| 12 | `getMensagens` e `enviarMensagem` no Service | Cauan | ☐ |
-| 13 | Tela **não** importa o Repository | Ambos (revisar no PR) | ☐ |
-| 14 | Stack Navigator, ida e volta | Cauan | ☐ |
-| 15 | Usa `navigation.navigate()` e `route.params` | Radlei | ☐ |
-| 16 | `useState` para atualizar as mensagens | Radlei | ☐ |
-| 17 | Instância **única** do Service | Cauan | ☐ |
-| 18 | Cada conversa mostra só as mensagens do contato | Cauan (filter) + teste juntos | ☐ |
-| 19 | Estrutura de pastas igual ao PDF | — | ✅ |
-
 ### Teste final (prova os requisitos 17 e 18)
 
 1. Abrir a conversa com a **Ana** e enviar uma mensagem.
@@ -87,7 +61,7 @@ mensagemService.enviarMensagem(contatoId, texto) // valida, cria e guarda
 
 ---
 
-## 4. Dica: Issues no GitHub
+## 3. Dica: Issues no GitHub
 
 Criar uma Issue para cada linha da divisão (seção 1) e atribuir à pessoa responsável. No PR, escrever `Closes #N` na descrição para a issue fechar automaticamente no merge.
 
