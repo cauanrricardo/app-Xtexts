@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, FlatList, TouchableOpacity, StyleSheet } from 'react-native';
 
 const contatos = [
-  { id: 1, nome: 'Ana' },
+  { id: 1, nome: 'Ricardo' },
   { id: 2, nome: 'Bruno' },
   { id: 3, nome: 'Carla' },
   { id: 4, nome: 'Diego' },
