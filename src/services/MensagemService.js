@@ -11,11 +11,12 @@ export class MensagemService {
   }
 
   enviarMensagem(contatoId, texto) {
-    if (!texto.trim()) {
+    const textoLimpo = texto?.trim();
+    if (!textoLimpo) {
       return;
     }
     const mensagem = {
-      id: Date.now(), contatoId, texto: texto.trim(), recebida: false
+      id: Date.now(), contatoId, texto: textoLimpo, recebida: false
     };
     this.repository.adicionarMensagem(mensagem);
   }
