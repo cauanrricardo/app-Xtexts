@@ -5,48 +5,48 @@ App de mensagens simples inspirado no WhatsApp, feito com **React Native + Expo*
 ---
 
 ## HomeScreen
-- [ ] Mostrar pelo menos **4 contatos** fictícios
-- [ ] Cada contato tem **nome** e opção para **abrir a conversa**
-- [ ] Ao tocar, navegar para o Chat enviando **id** e **nome** como parâmetros
+- [x] Mostrar pelo menos **4 contatos** fictícios
+- [x] Cada contato tem **nome** e opção para **abrir a conversa**
+- [x] Ao tocar, navegar para o Chat enviando **id** e **nome** como parâmetros
 
 ## ChatScreen
-- [ ] Mostrar o **nome** do contato
-- [ ] Mostrar a **lista de mensagens**
-- [ ] Mensagens **enviadas** à **direita**
-- [ ] Mensagens **recebidas** à **esquerda**
-- [ ] **Campo de texto** e **botão** para enviar
-- [ ] Depois de enviar, a mensagem **aparece** e o campo é **limpo**
-- [ ] **Não** permitir mensagem vazia
+- [x] Mostrar o **nome** do contato
+- [x] Mostrar a **lista de mensagens**
+- [x] Mensagens **enviadas** à **direita**
+- [x] Mensagens **recebidas** à **esquerda**
+- [x] **Campo de texto** e **botão** para enviar
+- [x] Depois de enviar, a mensagem **aparece** e o campo é **limpo**
+- [x] **Não** permitir mensagem vazia
 
 ## Componente Mensagem
-- [ ] Componente reutilizável chamado `Mensagem`
-- [ ] Prop `mensagem`: texto da mensagem
-- [ ] Prop `recebida`: booleano que define alinhamento e estilo
+- [x] Componente reutilizável chamado `Mensagem`
+- [x] Prop `mensagem`: texto da mensagem
+- [x] Prop `recebida`: booleano que define alinhamento e estilo
 
 ## MensagemRepository
-- [ ] Classe que guarda as mensagens em um **array de objetos**
-- [ ] Cada mensagem tem: `id`, `contatoId`, `texto`, `recebida`
-- [ ] Método `getMensagens(contatoId)`: retorna as mensagens do contato
-- [ ] Método `adicionarMensagem(mensagem)`: guarda uma nova mensagem
+- [x] Classe que guarda as mensagens em um **array de objetos**
+- [x] Cada mensagem tem: `id`, `contatoId`, `texto`, `recebida`
+- [x] Método `getMensagens(contatoId)`: retorna as mensagens do contato
+- [x] Método `adicionarMensagem(mensagem)`: guarda uma nova mensagem
 
 ## MensagemService
-- [ ] Classe com as regras de negócio
-- [ ] Método `getMensagens(contatoId)`: consulta as mensagens
-- [ ] Método `enviarMensagem(contatoId, texto)`: valida, cria e guarda
-- [ ] As telas usam **só o Service** (nunca o Repository direto)
+- [x] Classe com as regras de negócio
+- [x] Método `getMensagens(contatoId)`: consulta as mensagens
+- [x] Método `enviarMensagem(contatoId, texto)`: valida, cria e guarda
+- [x] As telas usam **só o Service** (nunca o Repository direto)
 
 ## Navegação
-- [ ] Usar **React Navigation** com **Stack Navigator**
-- [ ] Ir da Home para o Chat passando os dados do contato
-- [ ] Voltar para a tela anterior
-- [ ] Usar `navigation.navigate()` e `route.params`
+- [x] Usar **React Navigation** com **Stack Navigator**
+- [x] Ir da Home para o Chat passando os dados do contato
+- [x] Voltar para a tela anterior
+- [x] Usar `navigation.navigate()` e `route.params`
 
 ## Regras gerais
-- [ ] Usar `useState` para atualizar as mensagens
-- [ ] Sem MQTT, API ou banco de dados: tudo **em memória**
-- [ ] **Uma única instância** do Service
-- [ ] Cada conversa mostra **só as mensagens do contato** selecionado
-- [ ] Não precisa manter as mensagens depois de reiniciar o app
+- [x] Usar `useState` para atualizar as mensagens
+- [x] Sem MQTT, API ou banco de dados: tudo **em memória**
+- [x] **Uma única instância** do Service
+- [x] Cada conversa mostra **só as mensagens do contato** selecionado
+- [x] Não precisa manter as mensagens depois de reiniciar o app
 
 ## Estrutura de pastas
 - [x] Estrutura criada
@@ -66,5 +66,8 @@ App.js
 ```
 
 ## Entrega
-- [ ] Grupo de até 3 pessoas
+- [x] Grupo de até 3 pessoas
 - [ ] Entregar pelo **Classroom** até a data limite
+
+## Escopo entregue
+- Front-end completo, com os dados em memória. A parte de comunicação (MQTT/API) não está incluída, o que é permitido pelo enunciado (requisito: sem MQTT, API ou banco de dados).

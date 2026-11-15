@@ -54,9 +54,9 @@ mensagemService.enviarMensagem(contatoId, texto) // valida, cria e guarda
 
 ### Teste final (prova os requisitos 17 e 18)
 
-1. Abrir a conversa com a **Ana** e enviar uma mensagem.
-2. Voltar e abrir o **Bruno** → deve estar **sem** a mensagem da Ana.
-3. Voltar para a **Ana** → a mensagem **continua lá**.
+1. Abrir a conversa com o **Ricardo** e enviar uma mensagem.
+2. Voltar e abrir o **Bruno** → deve estar **sem** a mensagem do Ricardo.
+3. Voltar para o **Ricardo** → a mensagem **continua lá**.
 4. Tentar enviar mensagem vazia (ou só espaços) → **não** deve aparecer nada.
 
 ---
