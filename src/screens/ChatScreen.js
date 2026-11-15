@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { View, FlatList, TextInput, TouchableOpacity, Text, StyleSheet } from 'react-native';
+import { View, FlatList, TextInput, TouchableOpacity, Text, StyleSheet, KeyboardAvoidingView } from 'react-native';
+import { useHeaderHeight } from '@react-navigation/elements';
 import Mensagem from '../components/Mensagem';
 import mensagemService from '../services/MensagemService';
 
@@ -7,6 +8,7 @@ export default function ChatScreen({ route }) {
   const { contatoId } = route.params;
   const [mensagens, setMensagens] = useState(mensagemService.getMensagens(contatoId));
   const [texto, setTexto] = useState('');
+  const alturaHeader = useHeaderHeight();
 
   const handleEnviar = () => {
     if (!texto.trim()) {
@@ -18,8 +20,13 @@ export default function ChatScreen({ route }) {
   };
 
   return (
-    <View style={styles.container}>
+    <KeyboardAvoidingView
+      style={styles.container}
+      behavior="padding"
+      keyboardVerticalOffset={alturaHeader}
+    >
       <FlatList
+        contentContainerStyle={styles.lista}
         data={mensagens}
         keyExtractor={(item) => String(item.id)}
         renderItem={({ item }) => (
@@ -37,13 +44,17 @@ export default function ChatScreen({ route }) {
           <Text style={styles.botaoTexto}>Enviar</Text>
         </TouchableOpacity>
       </View>
-    </View>
+    </KeyboardAvoidingView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#F5F5F5',
+  },
+  lista: {
+    padding: 12,
   },
   inputArea: {
     flexDirection: 'row',
